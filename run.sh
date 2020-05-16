@@ -11,6 +11,12 @@ done < ./lists/brew
 # install oh-my-zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# install zsh–autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+# install zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+
 # show changes to be made
 # to .zshrc
 diff ./configs/shell/.zshrc ~/.zshrc
@@ -22,3 +28,7 @@ cp ./configs/shell/.bashrc ~
 # install git configs
 cp ./configs/git/.gitconfig ~
 cp ./configs/git/.gitignore ~
+
+# install vscode extensions
+# TODO: install vscode
+# cat lists/vscode | xargs -L1 code --install-extension 
