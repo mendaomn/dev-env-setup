@@ -8,13 +8,12 @@ while read package; do
   brew install $package
 done < ./lists/brew
 
-# set zsh as default shell
-# will prompt for password
-chsh -s $(which zsh)
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # show changes to be made
 # to .zshrc
-diff ./shell/.zshrc ~/.zshrc
+diff ./configs/shell/.zshrc ~/.zshrc
 
 # install .bashrc configs
 cp -R ./configs/shell/.bashrc.d ~
