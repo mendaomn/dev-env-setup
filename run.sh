@@ -28,7 +28,3 @@ cp ./configs/shell/.bashrc ~
 # install git configs
 cp ./configs/git/.gitconfig ~
 cp ./configs/git/.gitignore ~
-
-# install vscode extensions
-# TODO: install vscode
-# cat lists/vscode | xargs -L1 code --install-extension 

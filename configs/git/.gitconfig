@@ -1,6 +1,6 @@
 [user]
 	name = Alessandro Menduni
-	email = menduni@westwingsolutions.com
+	email = menduni6@gmail.com
 
 [alias]
     ad = add
@@ -17,5 +17,12 @@
     default = current
     
 [core]
-	editor = nano
+	editor = code --wait
 	pager = delta
+	excludesFile = /Users/alessandromenduni/.gitignore
+
+[pull]
+	rebase = false
+
+[init]
+	defaultBranch = main
