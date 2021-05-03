@@ -1,10 +1,5 @@
 # Sets up aliases
 
-# -- ls
-# alias ls='ls --color=auto'
-# alias ll='ls -alF'
-# alias la='ls -A'
-
 # -- grep
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
@@ -36,8 +31,3 @@ starttransfer:  %{time_starttransfer}s\n\
 
 # -- sprint
 alias week='date +%V'
-
-# -- git flow + trello
-gflowstart() {
-  git flow feature start $(echo $1 | sed 's!https://trello.com/c/!!' | sed 's!/!-!')
-}
